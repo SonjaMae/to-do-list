@@ -5,5 +5,8 @@
 .parcel-cache
 dist
 
+# VS Code
+/.vscode
+
 # OS files to include if on a Mac
 # .DS_Store

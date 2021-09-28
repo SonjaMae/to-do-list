@@ -1,5 +1,5 @@
 {
-  "name": "workflow",
+  "name": "todolistapp",
   "version": "1.0.0",
   "description": "Fewder is a simple Front End Framework for developing Web App's using modules",
   "directories": {
@@ -9,12 +9,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Sonja Mae",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
     "http-server": "^13.0.2",
     "parcel": "^2.0.0-rc.0",
     "sass": "^1.40.1"
-  }
+  },
+  "main": "src/index.html",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "lodash": "^4.17.21",
+    "uuid": "^8.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonjaMae/to-do-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SonjaMae/to-do-list/issues"
+  },
+  "homepage": "https://github.com/SonjaMae/to-do-list#readme"
 }
