@@ -5,6 +5,9 @@
 .parcel-cache
 dist
 
+# environment files (keys to access a service)
+.env
+
 # VS Code
 /.vscode
 
