@@ -1,5 +1,8 @@
-import { divide } from "lodash";
+import Router from './router/router.js'
+import homePage from './pages/homePage.js'
 
-const app = document.querySelector('#app');
+const app = document.querySelector('#app')
 
-app.innerHTML = '<h1>HOME PAGE</h1>';
+Router('/')
+
+export default homePage

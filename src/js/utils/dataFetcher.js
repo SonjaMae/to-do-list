@@ -1,5 +1,5 @@
 /* 
-    dataFetcher function takes a url parameter (and is async so retyurns a promise)
+    dataFetcher function takes a url parameter (and is async so returns a promise)
 
     description:
 

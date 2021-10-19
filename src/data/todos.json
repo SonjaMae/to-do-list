@@ -2,32 +2,51 @@
     {
         "id":"qw3er57u",
         "category":"home",
-        "description":"short description of the to do",
-        "isComplete":true
+        "title": "Home",
+        "isComplete":true,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
     },
     {
         "id":"kj7sy21l",
         "category":"school",
-        "description":"short description of the to do",
-        "isComplete":true
+        "title": "School",
+        "isComplete":true,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
     },
     {
         "id":"v7d243c8",
         "category":"health",
-        "description":"short description of the to do",
-        "isComplete":true
+        "title": "Health",
+        "isComplete":true,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
     },
     {
         "id":"ds687ds2",
         "category":"friends",
-        "description":"short description of the to do",
-        "isComplete":true
-    }
-    ,
+        "title": "Friends",
+        "isComplete":true,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
+    },
     {
         "id":"a8sze5d7",
         "category":"work",
-        "description":"short description of the to do",
-        "isComplete":true
+        "title": "Work",
+        "isComplete":true,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
     }
 ]
