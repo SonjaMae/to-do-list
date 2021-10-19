@@ -1,10 +1,5 @@
 /* 
     dataFetcher function takes a url parameter (and is async so returns a promise)
-
-    description:
-
-    parameters:
-        url: string
 */
 
 const dataFetcher = async function (url = null) {

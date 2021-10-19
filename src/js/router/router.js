@@ -1,4 +1,5 @@
-import homePage from "./../pages/homePage.js";
+import homePage from "../pages/homePage.js";
+// import list from "../pages/todolist.js";
 
 const routes = {
     '/':homePage()
@@ -12,7 +13,6 @@ const Router = function(pathname){
         {},
         pathname,
         window.location.origin + pathname
-
     )
 
     app.appendChild(routes[window.location.pathname])
