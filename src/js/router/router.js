@@ -1,8 +1,9 @@
 import homePage from "../pages/homePage.js";
-// import list from "../pages/todolist.js";
+import toDoPage from "../pages/toDoPage.js";
 
 const routes = {
-    '/':homePage()
+    '/':homePage(),
+    '/toDo':toDoPage()
 }
 
 const Router = function(pathname){
