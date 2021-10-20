@@ -1,5 +1,6 @@
 import Router from './router/router.js'
 import homePage from './pages/homePage.js'
+import toDoPage from './pages/toDoPage.js'
 import dataFetcher from './utils/dataFetcher.js'
 
 Router('/')
@@ -21,4 +22,5 @@ const app = document.querySelector('#app')
 // appInit()
 // window.addEventListener('load', appInit)
 
-export default homePage
+export {homePage}
+export {toDoPage}

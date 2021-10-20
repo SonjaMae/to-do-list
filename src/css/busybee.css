@@ -30,6 +30,9 @@ p.ui-tagline {
   font-weight: bold;
   font-size: 1.5rem;
 }
+a.ui-link {
+  margin-right: 2rem;
+}
 a {
   background-color: black;
   color: lemonchiffon;
@@ -46,6 +49,22 @@ a:active {
   background-color: lemonchiffon;
   text-decoration: none;
 }
-a.ui-link {
-  margin-right: 2rem;
+div.manager-head {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1.td-header {
+  display: flex;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+img.td-logo {
+  display: flex;
+  max-width: 75px;
+}
+p.td-tagline {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
 }

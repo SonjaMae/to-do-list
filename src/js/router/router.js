@@ -3,7 +3,7 @@ import toDoPage from "../pages/toDoPage.js";
 
 const routes = {
     '/':homePage(),
-    '/toDo':toDoPage()
+    '/taskManager':toDoPage()
 }
 
 const Router = function(pathname){
