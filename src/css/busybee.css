@@ -54,19 +54,20 @@ div.manager-head {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 h1.td-header {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 2rem;
+  margin-left: 2rem;
 }
 img.td-logo {
   display: flex;
-  max-width: 75px;
+  max-width: 100px;
+  margin-top: 1rem;
 }
 p.td-tagline {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 2rem;
   font-weight: bold;
 }

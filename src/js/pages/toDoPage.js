@@ -14,7 +14,7 @@ const toDoPage = function (){
     const managerBody = div('manager-body')
 
     const h1 = header('Busy Bee', 'td-header')
-    const icon = logo('Busy Bee Task Manager logo', 'td-logo')
+    const icon = logo('logo', 'td-logo')
     const tagLine = tagline('Task Manager', 'td-tagline')
     managerHead.append(h1)
     managerHead.append(icon)
