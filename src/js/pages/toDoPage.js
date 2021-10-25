@@ -12,20 +12,25 @@ import flower5 from '../components/ui/flower5.js'
 import header2 from '../components/ui/header2.js'
 import duedate from '../components/ui/duedate.js'
 import completed from '../components/ui/completed.js'
+import edit from '../components/ui/edit.js'
+import trash from '../components/ui/trash.js'
+import add from '../components/ui/add.js'
+import p from '../components/ui/p.js'
 
 
 const toDoPage = function (){
     const manager = document.createElement('manager')
     const managerHead = div('manager-head')
     const managerBody = div('manager-body')
-
+    const managerFoot = div('manager-foot')
+    //head
     const h1 = header('Busy Bee', 'td-header')
     const icon = logo('logo', 'td-logo')
     const tagLine = tagline('Task Manager', 'td-tagline')
     managerHead.append(h1)
     managerHead.append(icon)
     managerHead.append(tagLine)
-
+    //to do structure
     const todolist = ul('td')
     const liHome = li('home-li')
     const liSchool = li('school-li')
@@ -37,7 +42,7 @@ const toDoPage = function (){
     todolist.append(liHealth)
     todolist.append(liFriends)
     todolist.append(liWork)
-
+    //to do icons
     const iconHome = flower1('Home icon', 'home-icon')
     const iconSchool = flower2('School icon', 'school-icon')
     const iconHealth = flower3('Health icon', 'health-icon')
@@ -48,7 +53,7 @@ const toDoPage = function (){
     liHealth.append(iconHealth)
     liFriends.append(iconFriends)
     liWork.append(iconWork)
-
+    //to do info div
     const divHome = div('home-div')
     const divSchool = div('school-div')
     const divHealth = div('health-div')
@@ -76,26 +81,55 @@ const toDoPage = function (){
     divHealth.append(dueHealth)
     divFriends.append(dueFriends)
     divWork.append(dueWork)
+    //
 
 
+    
+
+    //put divs on their li
     liHome.append(divHome)
     liSchool.append(divSchool)
     liHealth.append(divHealth)
     liFriends.append(divFriends)
     liWork.append(divWork)
-
-    // edit
-
-    // delete
-
+    //edit icon
+    const iconEdit1 = edit('Edit task', 'edit-icon')
+    const iconEdit2 = edit('Edit task', 'edit-icon')
+    const iconEdit3 = edit('Edit task', 'edit-icon')
+    const iconEdit4 = edit('Edit task', 'edit-icon')
+    const iconEdit5 = edit('Edit task', 'edit-icon')
+    liHome.append(iconEdit1)
+    liSchool.append(iconEdit2)
+    liHealth.append(iconEdit3)
+    liFriends.append(iconEdit4)
+    liWork.append(iconEdit5)
+    //delete icon
+    const iconDelete1 = trash('Delete task', 'delete-icon')
+    const iconDelete2 = trash('Delete task', 'delete-icon')
+    const iconDelete3 = trash('Delete task', 'delete-icon')
+    const iconDelete4 = trash('Delete task', 'delete-icon')
+    const iconDelete5 = trash('Delete task', 'delete-icon')
+    liHome.append(iconDelete1)
+    liSchool.append(iconDelete2)
+    liHealth.append(iconDelete3)
+    liFriends.append(iconDelete4)
+    liWork.append(iconDelete5)
+    //put lis on the body
     managerBody.append(liHome)
     managerBody.append(liSchool)
     managerBody.append(liHealth)
     managerBody.append(liFriends)
     managerBody.append(liWork)
 
+    //footer
+    const addTaskIcon = add('Add task', 'add-icon')
+    const addTaskText = p('Add New Task', 'add-text')
+    managerFoot.append(addTaskIcon)
+    managerFoot.append(addTaskText)
+
     manager.append(managerHead)
     manager.append(managerBody)
+    manager.append(managerFoot)
 
     return manager
 }
