@@ -1,20 +1,20 @@
 import header from '../components/ui/header.js'
-import logo from '../components/ui/logo.js'
+import logo from '../components/icons/logo.js'
 import tagline from '../components/ui/tagline.js'
 import div from '../components/ui/div.js'
 import ul from '../components/ui/ul.js'
 import li from '../components/ui/li.js'
-import flower1 from '../components/ui/flower1.js'
-import flower2 from '../components/ui/flower2.js'
-import flower3 from '../components/ui/flower3.js'
-import flower4 from '../components/ui/flower4.js'
-import flower5 from '../components/ui/flower5.js'
+import flower1 from '../components/icons/flower1.js'
+import flower2 from '../components/icons/flower2.js'
+import flower3 from '../components/icons/flower3.js'
+import flower4 from '../components/icons/flower4.js'
+import flower5 from '../components/icons/flower5.js'
 import header2 from '../components/ui/header2.js'
 import duedate from '../components/ui/duedate.js'
 import completed from '../components/ui/completed.js'
-import edit from '../components/ui/edit.js'
-import trash from '../components/ui/trash.js'
-import add from '../components/ui/add.js'
+import edit from '../components/icons/edit.js'
+import trash from '../components/icons/trash.js'
+import add from '../components/icons/add.js'
 import p from '../components/ui/p.js'
 
 
@@ -53,13 +53,14 @@ const toDoPage = function (){
     liHealth.append(iconHealth)
     liFriends.append(iconFriends)
     liWork.append(iconWork)
-    //to do info div
+
+    //to do info structure
     const divHome = div('home-div')
     const divSchool = div('school-div')
     const divHealth = div('health-div')
     const divFriends = div('friends-div')
     const divWork = div('work-div')
-    //
+    //titles
     const h2Home = header2('Home', 'home-h2')
     const h2School = header2('School', 'school-h2')
     const h2Health = header2('Health', 'health-h2')
@@ -70,7 +71,7 @@ const toDoPage = function (){
     divHealth.append(h2Health)
     divFriends.append(h2Friends)
     divWork.append(h2Work)
-    //
+    //due on
     const dueHome = duedate('Home', 'home-due')
     const dueSchool = duedate('School', 'school-due')
     const dueHealth = duedate('Health', 'health-due')
@@ -81,10 +82,17 @@ const toDoPage = function (){
     divHealth.append(dueHealth)
     divFriends.append(dueFriends)
     divWork.append(dueWork)
-    //
+    //is completed
+    const isCompleted = completed('is-completed')
+
+    divHome.append(isCompleted)
+    divSchool.append(isCompleted)
+    divHealth.append(isCompleted)
+    divFriends.append(isCompleted)
+    divWork.append(isCompleted)
 
 
-    
+
 
     //put divs on their li
     liHome.append(divHome)
@@ -121,12 +129,12 @@ const toDoPage = function (){
     managerBody.append(liFriends)
     managerBody.append(liWork)
 
-    //footer
+    //foot
     const addTaskIcon = add('Add task', 'add-icon')
     const addTaskText = p('Add New Task', 'add-text')
     managerFoot.append(addTaskIcon)
     managerFoot.append(addTaskText)
-
+    //put head, body, and foot on the app div
     manager.append(managerHead)
     manager.append(managerBody)
     manager.append(managerFoot)

@@ -2,15 +2,15 @@ import makeElement from "../../utils/makeElement.js"
 import isComplete from "../../../data/todos.json"
 
 const completed = function (className="is-completed"){
-     let completeStatus = JSON.parse(isComplete)
+     let completeStatus = isComplete.toString()
 
-     if (completeStatus == true) {
-          completeStatus = "Completed"
-     } else {
-          completeStatus = ""
-     }
+     // if (isComplete == true) {
+     //      completeStatus = "Completed"
+     // } else {
+     //      completeStatus = "Incomplete"
+     // }
 
-     const template = `<p class="${className}>Completed</p>`
+     const template = `<p class="${className}>${completeStatus}</p>`
      const element =  makeElement(template)
 
      return element

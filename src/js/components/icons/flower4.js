@@ -1,11 +1,11 @@
 import makeElement from "../../utils/makeElement.js"
-import img from "../icons/add.png"
+import img from "../../../assets/flower4.png"
 
-const add = function (label="Add task", className="add-icon"){
+const flower4 = function (label="ui img", className="ui-img"){
      const template = `<img src="${img}" class="${className}" alt="${label}" />`
      const element = makeElement(template);
 
      return element
 }
 
-export default add
+export default flower4

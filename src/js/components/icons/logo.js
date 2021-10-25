@@ -1,5 +1,5 @@
 import makeElement from "../../utils/makeElement.js"
-import img from "../icons/bee.png"
+import img from "../../../assets/bee.png"
 
 // path="../../pages/todolist.js"
 const logo = function (label="ui logo", className="ui-logo"){

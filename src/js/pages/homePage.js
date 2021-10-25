@@ -1,5 +1,5 @@
 import header from '../components/ui/header.js'
-import logo from '../components/ui/logo.js'
+import logo from '../components/icons/logo.js'
 import tagline from '../components/ui/tagline.js'
 import link from '../components/ui/link.js'
 
