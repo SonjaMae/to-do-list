@@ -4,6 +4,7 @@ import tagline from '../components/ui/tagline.js'
 import div from '../components/ui/div.js'
 import ul from '../components/ui/ul.js'
 import li from '../components/ui/li.js'
+// import id from '../components/ui/id.js'
 import flower1 from '../components/icons/flower1.js'
 import flower2 from '../components/icons/flower2.js'
 import flower3 from '../components/icons/flower3.js'
@@ -15,7 +16,6 @@ import completed from '../components/ui/completed.js'
 import edit from '../components/icons/edit.js'
 import trash from '../components/icons/trash.js'
 import add from '../components/icons/add.js'
-import p from '../components/ui/p.js'
 
 
 const toDoPage = function (){
@@ -42,6 +42,18 @@ const toDoPage = function (){
     todolist.append(liHealth)
     todolist.append(liFriends)
     todolist.append(liWork)
+    //ids
+    // const idHome = id()
+    // const idSchool = id()
+    // const idHealth = id()
+    // const idFriends = id()
+    // const idWork = id()
+    // liHome.append(idHome)
+    // liSchool.append(idSchool)
+    // liHealth.append(idHealth)
+    // liFriends.append(idFriends)
+    // liWork.append(idWork)
+
     //to do icons
     const iconHome = flower1('Home icon', 'home-icon')
     const iconSchool = flower2('School icon', 'school-icon')
@@ -94,10 +106,7 @@ const toDoPage = function (){
     divFriends.append(isCompleted4)
     divWork.append(isCompleted5)
 
-
-
-
-    //put divs on their li
+    //put divs on their lis
     liHome.append(divHome)
     liSchool.append(divSchool)
     liHealth.append(divHealth)
@@ -134,9 +143,7 @@ const toDoPage = function (){
 
     //foot
     const addTaskIcon = add('Add task', 'add-icon')
-    const addTaskText = p('Add New Task', 'add-text')
     managerFoot.append(addTaskIcon)
-    managerFoot.append(addTaskText)
     //put head, body, and foot on the app div
     manager.append(managerHead)
     manager.append(managerBody)

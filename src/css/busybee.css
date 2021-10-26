@@ -84,7 +84,7 @@ li {
   background-color: black;
   border-radius: 10px;
   list-style-type: none;
-  padding: 1rem;
+  padding: 0.75rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -98,7 +98,7 @@ li div {
 }
 div.manager-body img {
   max-width: 50px;
-  margin-right: 0.25rem;
+  margin-left: 0.25rem;
 }
 h2 {
   color: lemonchiffon;
@@ -118,9 +118,15 @@ li:nth-of-type(4) p {
 li:last-of-type p {
   color: lightblue;
 }
+li p.is-completed {
+  color: lemonchiffon;
+}
+li a {
+  padding: 0;
+}
 div img.delete-icon, div img.edit-icon {
   max-width: 30px;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0;
 }
 div.manager-foot {
   background-image: linear-gradient(rgba(0,0,0,0), lemonchiffon);
@@ -129,14 +135,18 @@ div.manager-foot {
 div.manager-foot img {
   max-width: 75px;
 }
-div.manager-foot p {
+div.manager-foot span {
+  display: block;
   padding-bottom: 1rem;
   min-width: 5rem;
   max-width: 10rem;
-  color: lemonchiffon;
   background-color: black;
   border-radius: 10px;
   padding: 0.5rem;
   margin: 0 auto;
   margin-top: 0.75rem;
+}
+div.manager-foot a {
+  background-color: transparent;
+  padding: 0;
 }
