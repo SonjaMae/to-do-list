@@ -1,5 +1,6 @@
 import homePage from "../pages/homePage.js";
 import toDoPage from "../pages/toDoPage.js";
+import notFound from "../pages/notFound.js";
 
 const routes = {
     '/':homePage(),
@@ -7,6 +8,8 @@ const routes = {
 }
 
 const Router = function(pathname){
+    const isValidRoute = Object.keys(routes).find(key=>key===pathname)
+
     const app = document.querySelector('#app')
     app.innerHTML = ''
 
@@ -16,7 +19,11 @@ const Router = function(pathname){
         window.location.origin + pathname
     )
 
-    app.appendChild(routes[window.location.pathname])
+    if (isValidRoute === undefined) {
+        app.append(notFound())
+    } else {
+        app.appendChild(routes[window.location.pathname])
+    }
 }
 
 export {routes}
