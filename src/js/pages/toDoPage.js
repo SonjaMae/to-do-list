@@ -4,7 +4,7 @@ import tagline from '../components/ui/tagline.js'
 import div from '../components/ui/div.js'
 import ul from '../components/ui/ul.js'
 import li from '../components/ui/li.js'
-// import id from '../components/ui/id.js'
+import id from '../components/ui/id.js'
 import flower1 from '../components/icons/flower1.js'
 import flower2 from '../components/icons/flower2.js'
 import flower3 from '../components/icons/flower3.js'
@@ -42,12 +42,12 @@ const toDoPage = function (){
     todolist.append(liHealth)
     todolist.append(liFriends)
     todolist.append(liWork)
-    //ids
-    // const idHome = id()
-    // const idSchool = id()
-    // const idHealth = id()
-    // const idFriends = id()
-    // const idWork = id()
+    //ids (showing as undefined?)
+    // const idHome = id(0)
+    // const idSchool = id(1)
+    // const idHealth = id(2)
+    // const idFriends = id(3)
+    // const idWork = id(4)
     // liHome.append(idHome)
     // liSchool.append(idSchool)
     // liHealth.append(idHealth)
