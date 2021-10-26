@@ -83,13 +83,16 @@ const toDoPage = function (){
     divFriends.append(dueFriends)
     divWork.append(dueWork)
     //is completed
-    const isCompleted = completed('is-completed')
-
-    divHome.append(isCompleted)
-    divSchool.append(isCompleted)
-    divHealth.append(isCompleted)
-    divFriends.append(isCompleted)
-    divWork.append(isCompleted)
+    const isCompleted1 = completed('is-completed')
+    const isCompleted2 = completed('is-completed')
+    const isCompleted3 = completed('is-completed')
+    const isCompleted4 = completed('is-completed')
+    const isCompleted5 = completed('is-completed')
+    divHome.append(isCompleted1)
+    divSchool.append(isCompleted2)
+    divHealth.append(isCompleted3)
+    divFriends.append(isCompleted4)
+    divWork.append(isCompleted5)
 
 
 
