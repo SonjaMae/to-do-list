@@ -9,7 +9,7 @@ const homePage = function (){
     const h1 = header('Busy Bee', 'ui-header')
     const tagLine = tagline('Vanilla JavaScript Task Manager', 'ui-tagline')
     const icon = logo('logo', 'ui-logo')
-    const linkToApp = link('Manage Your Tasks', '/taskManager')
+    const linkToApp = link('Manage Your Tasks', '/tasks')
     home.append(h1)
     home.append(tagLine)
     home.append(icon)

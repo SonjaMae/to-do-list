@@ -4,7 +4,7 @@ import img from "../../assets/bee.png"
 
 const notFound = function() {
     const page = document.createElement('div')
-    const backToSafety = link("Back to Safety", '/taskManager')
+    const backToSafety = link("Back to Safety", '/tasks')
     const template = `
         <header class="ui-header">
             <h1>Error 404</h1>

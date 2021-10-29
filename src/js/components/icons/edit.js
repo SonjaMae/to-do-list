@@ -2,7 +2,7 @@ import makeElement from "../../utils/makeElement.js"
 import img from "../../../assets/edit.png"
 
 const edit = function (label="Edit task", className="edit-icon"){
-     const template = `<a href="#">
+     const template = `<a href="/edit">
                <img src="${img}" class="${className}" alt="${label}" />
           </a>`
      const element = makeElement(template);

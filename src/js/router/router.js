@@ -4,7 +4,7 @@ import notFound from "../pages/notFound.js";
 
 const routes = {
     '/':homePage(),
-    '/taskManager':toDoPage()
+    '/tasks':toDoPage()
 }
 
 const Router = function(pathname){
