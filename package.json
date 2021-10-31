@@ -37,6 +37,5 @@
   "bugs": {
     "url": "https://github.com/SonjaMae/to-do-list/issues"
   },
-  "homepage": "https://github.com/SonjaMae/to-do-list#readme",
-  "main": "gulpfile.js"
+  "homepage": "https://github.com/SonjaMae/to-do-list#readme"
 }
